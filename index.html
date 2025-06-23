@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box active" id="login-form">
+                <form action="">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit" name="login">Login</button>
+                    <p>Don't hane an account click here ---><a href="#" onclick="showForm('register-form')">Register</a></p>
+                </form>
+                </div>
+
+
+
+                <div class="form-box" id="register-form">
+                <form action="">
+                    <h2>Register</h2>
+                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <select name="role" required>
+                        <option value="" disabled selected>--Select Role--</option>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <button type="submit" name="Register">Login</button>
+                    <p>Already have an account click here to login--><a href="#" onclick="showForm('login-form')">login</a></p>
+                </form>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+</html>
