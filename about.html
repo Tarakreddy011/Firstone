@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Sweet Spot Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #f7c59f;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #7d5a50;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 32px;
+        }
+        .owner-section {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        .owner-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f7c59f;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        .owner-info h2 {
+            margin: 0 0 10px 0;
+            color: #7d5a50;
+        }
+        .contact-list {
+            margin: 18px 0;
+            padding-left: 20px;
+        }
+        .contact-list li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: #e07a5f;
+        }
+        footer {
+            background: #f7c59f;
+            text-align: center;
+            padding: 14px 0;
+            margin-top: 40px;
+            color: #7d5a50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="owner-section">
+            <img src="data:image/jpeg;base64,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" alt="Priya Sharma smiling warmly behind the bakery counter, wearing a pastel apron, surrounded by shelves filled with fresh bread and pastries in a cozy, sunlit bakery, expressing a joyful and welcoming mood" class="owner-photo">
+            <div class="owner-info">
+                <h2>Meet Our Owner</h2>
+                <p>
+                    Hi! I'm <strong>Hardik pandya</strong>, the proud owner of The Sweet Spot Bakery. With a passion for baking and a love for creating delightful treats, I started this bakery to share joy and sweetness with our community.
+                </p>
+            </div>
+        </section>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <ul class="contact-list">
+                <li><strong>Address:</strong> 123 Bakery Lane, Sweet City, SC 12345</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Email:</strong> info@sweetspotbakery.com</li>
+            </ul>
+            <p>
+                <strong>Opening Hours:</strong><br>
+                Monday to Saturday: 8 AM – 6 PM<br>
+                Sunday: 9 AM – 5 PM
+            </p>
+            <p>
+                We are committed to providing the best customer service and quality baked goods.<br>
+                Thank you for visiting our bakery website! We hope to see you soon!
+            </p>
+            <p>
+                To order online, please visit our <a href="menu.html">Menu</a> page.<br>
+                For any inquiries, feel free to contact us through our <a href="contact.html">Contact</a> page.<br>
+                Thank you for your support – we look forward to serving you with our delicious baked goods!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Sweet Spot Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #ede7f6 0%, #b39ddb 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ede7f6 60%, #b39ddb 100%);
+            color: #4527a0;
+            padding: 28px 0 12px 0;
+            text-align: center;
+            border-radius: 0 0 22px 22px;
+            box-shadow: 0 4px 16px rgba(103, 58, 183, 0.10);
+            margin-bottom: 32px;
+            border-bottom: 4px solid #d1c4e9;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+            font-size: 2.8em;
+            letter-spacing: 2.5px;
+            color: #512da8;
+            text-shadow: 2px 3px 0 #ede7f6;
+        }
+         header h2 {
+            margin: 0;
+            font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+            font-size: 2.8em;
+            letter-spacing: 2.5px;
+            color: #512da8;
+            text-shadow: 2px 3px 0 #ede7f6;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 14px 0 0 0;
+            font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 22px;
+            font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #512da8;
+            background: #ede7f6;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.08em;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 8px rgba(103, 58, 183, 0.09);
+            border: 1px solid #d1c4e9;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background: #7e57c2;
+            color: #fff;
+            box-shadow: 0 6px 16px rgba(103, 58, 183, 0.18);
+            text-decoration: none;
+            border-color: #7e57c2;
+        }
+
+        main {
+            max-width: 400px;
+            margin: 48px auto;
+            background: linear-gradient(120deg, #fff 80%, #ede7f6 100%);
+            padding: 38px 32px 32px 32px;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(94, 53, 177, 0.10);
+            border: 2px solid #d1c4e9;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+            color: #512da8;
+            letter-spacing: 0.5px;
+        }
+
+        form input {
+            width: 95%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1.5px solid #d1c4e9;
+            border-radius: 7px;
+            font-size: 17px;
+            background: #f3e5f5;
+            
+            transition: border-color 0.2s;
+        }
+
+        form input:focus {
+            border-color: #7e57c2;
+            outline: none;
+            background: #ede7f6;
+
+        }
+
+        form button {
+            background: linear-gradient(90deg, #7e57c2 60%, #d1c4e9 100%);
+            color: white;
+            border: none;
+            padding: 14px 0;
+            width: 50%;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 8px rgba(94, 53, 177, 0.10);
+            letter-spacing: 1px;
+            align-self: center;
+            margin-top: 12px;
+            display: block;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+
+        }
+
+        form button:hover {
+            background: linear-gradient(90deg, #512da8 60%, #7e57c2 100%);
+            box-shadow: 0 6px 18px rgba(94, 53, 177, 0.18);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #512da8;
+            font-size: 25px;
+            background: #ede7f6;
+            font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+            padding: 18px 0 10px 0;
+            border-radius: 18px 18px 0 0;
+            box-shadow: 0 -2px 8px rgba(103, 58, 183, 0.07);
+            border-top: 2px solid #d1c4e9;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Sweet Spot Bakery</h1>
+    <h2>Login Page</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div align="center">
+      <button type="submit">Login</button>
+      <p id="errorMessage" style="color: red; text-align: center;"></p>
+      <p style="text-align: center;">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    </form>
+  </main>
+  <div class="footer">
+    <footer>
+      <p>&copy; 2025 The Sweet Spot Bakery. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // Basic hardcoded credentials
+      if (user === "admin" && pass === "admin123") {
+        // Redirect to main page
+        window.location.href = "#mainpage.html";
+      } else if (user === "user" && pass === "user123") {
+        // Redirect to main page
+        window.location.href = "#index.html"; 
+      } else {
+        document.getElementById("errorMessage").textContent = "Invalid username or password!";
+      }
+    });
+  </script>
+</body>
+</html>

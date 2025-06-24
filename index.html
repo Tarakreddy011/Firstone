@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sweet Spot Bakery</title>
+    <!-- Google Fonts for a beautiful typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="user-auth">
+            <a href="login.html" class="auth-button">Login</a>
+            <a href="signup.html" class="auth-button primary">Sign Up</a>
+        </div>
+        
+        <div class="header-content">
+            <h1>The Sweet Spot Bakery</h1>
+            <p>Freshly Baked Goods, Made with Love</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section with Parallax Effect -->
+        <section id="home" class="hero-section parallax">
+            <div class="hero-overlay"></div>
+            <div class="hero-image-container">
+                <img src="https://www.lingoda.com/blog/wp-content/uploads/2022/02/german-bread-scaled-e1645628643125.jpg"
+                     alt="Bakery Hero" 
+                     onerror="this.onerror=null;this.src='//placehold.co/1920x1080?text=Bakery+Hero';">
+            </div>
+            <div class="hero-content">
+                <h1 class="animate-text fade-in-up">
+                    Welcome to The Sweet Spot Bakery
+                </h1>
+                <p class="animate-text-delay fade-in-up">
+                    Where Every Bite is a Delight!
+                </p>
+                <div class="cta-container">
+                    <a href="#menu" class="cta-button pulse">Explore Our Treats</a>
+                    <a href="menu.html" class="cta-button secondary">View Full Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us / Welcome Section -->
+        <section class="content-section about-bakery-section">
+            <div class="about-bakery-center">
+            <div class="content-text">
+                <h2 class="section-title">Welcome to The Sweet Spot Bakery</h2>
+                <p class="section-intro-text">
+                    At The Sweet Spot Bakery, we believe in the magic of baking. Our passion for creating delicious, handcrafted baked goods is evident in every loaf of bread, pastry, and cake we make. From our artisanal sourdoughs to our decadent cakes, each product is crafted with the finest ingredients and a whole lot of love.
+                </p>
+                <div class="about-images">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2024/03/Ham-and-Cheese-Croissants_EXPS_FT24_275831_ST_0321_5.jpg" 
+                         alt="Bakery Image" 
+                         class="about-image">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a627d49d55b41d98a8b436d/1634047366674-OV79QBJP54CRFAN58YAC/IMG_2739.jpg"
+                         alt="Bakery Image" 
+                         class="about-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDegghnplTkZEHoAC0Tk5D4pK7VP_PunfTZQ&s"
+                         alt="Bakery Image" 
+                         class="about-image">
+                </div>
+                <p class="section-intro-text">
+                    Our bakery is a place where tradition meets innovation. We take pride in using time-honored techniques while also embracing new flavors and trends. Whether you're looking for a classic loaf of bread, a custom cake for a special occasion, or just a sweet treat to brighten your day, we have something for everyone.           
+                </p>
+            </div>
+            </div>
+        </section>
+
+        <!-- Featured Image Section with Overlay Text -->
+        <section class="feature-image-section">
+            <div class="image-container">
+                <img src="https://i.shgcdn.com/269063bf-d72d-41dd-b848-9b30657696e6/-/format/auto/-/preview/3000x3000/-/quality/lighter/" 
+                     alt="Crafting Sweet Memories" 
+                     class="featured-image"
+                     onerror="this.onerror=null;this.src='placehold.co/1200x400?text=Image+Not+Found';">
+            </div>
+            <div class="feature-text-overlay">
+                <h2 class="animated-heading">Crafting Sweet Memories</h2>
+                <p class="animated-text">Explore our artisanal creations, handcrafted with love and tradition</p>
+            </div>
+        </section>
+
+        <!-- How We Make It Fresh Section -->
+        <section id="how-fresh" class="content-section process-section">
+            <h2 class="section-title">How We Make It Fresh</h2>
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Handpicked Ingredients</h3>
+                    <p>We start each day by selecting the freshest, highest-quality ingredients to ensure every bite bursts with flavor and goodness.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Baked Throughout the Day</h3>
+                    <p>Our bakers work in small batches, baking fresh goods all day long so you always get treats at their peak freshness.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>No Preservatives</h3>
+                    <p>We never use artificial preservatives, so everything you enjoy is as natural and wholesome as possible—just like homemade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Signature Products Section -->
+        <section id="our-products" class="content-section products-section">
+            <h2 class="section-title">Our Signature Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/FFDDC1/8B4513?text=Artisan+Sourdough" alt="Artisan Sourdough" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Artisan Sourdough</h3>
+                    <p>Slow-fermented for a rich, tangy flavor and a perfect crust. Great for sandwiches or with butter.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/FFDDC1/8B4513?text=Decadent+Chocolate+Cake" alt="Decadent Chocolate Cake" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Decadent Chocolate Cake</h3>
+                    <p>Layers of moist chocolate sponge with a luscious chocolate ganache, a true indulgence.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/FFDDC1/8B4513?text=Fluffy+Croissants" alt="Fluffy Croissants" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Fluffy Croissants</h3>
+                    <p>Light, buttery, and flaky – perfect for breakfast or an afternoon treat.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/FFDDC1/8B4513?text=Blueberry+Muffins" alt="Blueberry Muffins" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Blueberry Muffins</h3>
+                    <p>Bursting with fresh blueberries, a soft texture, and a delightful crumble topping.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Japanese Delights Section -->
+        <section id="japanese-delights" class="content-section bg-light-orange products-section">
+            <h2 class="section-title">Famous Japanese Delights</h2>
+            <p class="section-intro-text">Beyond our own creations, we love to appreciate the rich baking traditions from around the world. Here are some famous Japanese treats that are culinary masterpieces:</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/E6F3FF/2B5D7B?text=Mochi" alt="Mochi" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Mochi</h3>
+                    <p>A traditional Japanese rice cake made of mochigome (glutinous rice). It's pounded into a paste and molded into various shapes, often filled with sweet red bean paste or ice cream. Its chewy texture is unique!</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/E6F3FF/2B5D7B?text=Dorayaki" alt="Dorayaki" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Dorayaki</h3>
+                    <p>Two small pancake-like patties made from castella cake, wrapped around a filling of sweet azuki red bean paste. It's a popular snack, famously loved by the anime character Doraemon.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/E6F3FF/2B5D7B?text=Melon+Pan" alt="Melon Pan" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Melon Pan</h3>
+                    <p>A type of sweet bread from Japan, characterized by a thin, crisp cookie crust on top of a soft, fluffy bread. It's named for its resemblance to a melon, not for its flavor (it usually doesn't taste like melon).</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200/E6F3FF/2B5D7B?text=Daifuku" alt="Daifuku" onerror="this.onerror=null;this.src='https://placehold.co/300x200?text=Image+Not+Found';">
+                    <h3>Daifuku</h3>
+                    <p>Another variety of Mochi, Daifuku is a soft, chewy rice cake typically filled with sweet red bean paste (anko). It's often dusted with potato starch or cornstarch to prevent sticking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Cake Idea Generator -->
+        <section id="cake-generator" class="content-section api-feature-section bg-gradient-pink-purple">
+            <h3 class="section-title">Design Your Dream Cake! ✨</h3>
+            <p class="section-intro-text">
+                Tell us about your ideal cake, and our AI will craft a delightful description for you!
+            </p>
+
+            <div class="api-form-container">
+                <div class="input-group">
+                    <label for="occasion">Occasion:</label>
+                    <input type="text" id="occasion" placeholder="e.g., Birthday, Wedding, Anniversary">
+                </div>
+
+                <div class="input-group">
+                    <label for="flavors">Flavors:</label>
+                    <input type="text" id="flavors" placeholder="e.g., Chocolate, Vanilla Bean, Lemon Raspberry">
+                </div>
+
+                <div class="input-group">
+                    <label for="design">Design Style:</label>
+                    <input type="text" id="design" placeholder="e.g., Elegant floral, Fun cartoon, Rustic naked cake">
+                </div>
+
+                <button id="generateButton" class="api-button primary">
+                    Generate Cake Description ✨
+                </button>
+
+                <div id="loadingIndicator" class="loading-indicator hidden">
+                    <p>Generating... please wait!</p>
+                </div>
+
+                <div id="generatedDescription" class="api-output-area">
+                    Your custom cake description will appear here!
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Idea Generator -->
+        <section id="recipe-generator" class="content-section api-feature-section bg-gradient-blue-green">
+            <h3 class="section-title">Bake Something New! ✨ Recipe Idea Generator</h3>
+            <p class="section-intro-text">
+                Got some ingredients? Let our AI suggest a delightful baking recipe idea for you!
+            </p>
+
+            <div class="api-form-container">
+                <div class="input-group">
+                    <label for="ingredients">Your Ingredients (comma-separated):</label>
+                    <input type="text" id="ingredients" placeholder="e.g., flour, sugar, eggs, chocolate chips">
+                </div>
+
+                <button id="generateRecipeButton" class="api-button primary">
+                    Generate Recipe Idea ✨
+                </button>
+
+                <div id="loadingRecipeIndicator" class="loading-indicator hidden">
+                    <p>Whisking up ideas... please wait!</p>
+                </div>
+
+                <div id="generatedRecipeIdea" class="api-output-area">
+                    Your delicious recipe idea will appear here!
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="content-section bg-testimonials">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The sourdough bread is absolutely incredible! Perfect crust and a wonderfully airy interior. It's a staple in our home now."</p>
+                    <p class="testimonial-author">- Jane Doe</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I ordered a custom cake for my daughter's birthday, and it exceeded all expectations. Beautifully decorated and tasted divine!"</p>
+                    <p class="testimonial-author">- John Smith</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Their croissants transport me back to Paris with every bite. Flaky, buttery perfection. A must-try!"</p>
+                    <p class="testimonial-author">- Emily White</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <form id="contact" class="contact-form" onsubmit="sendSMSMessage(event)">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="cta-button primary">Send Message</button>
+            <form onsubmit="sendSMSMessage(event)">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Sweet Spot Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle-button" aria-label="Open Chatbot">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window" class="chatbot-window">
+        <div class="chatbot-header">
+            <h3>Baking Bot</h3>
+            <button id="chatbot-close" class="chatbot-close-button" aria-label="Close Chatbot">&times;</button>
+        </div>
+        <div class="chatbot-body" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm Baking Bot. Ask me anything about baking, our products, or ingredients!
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatbot-input" placeholder="Type your question...">
+            <button id="chatbot-send" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>  
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-button" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External JavaScript file for all interactivity and API calls -->
+    <script src="script.js"></script>
+</body>
+</html>
